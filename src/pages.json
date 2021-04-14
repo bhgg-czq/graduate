@@ -1,16 +1,68 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/main/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/publish/index",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		},
+		{
+			"path": "pages/mine/persondata/index",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/main/question/index",
+			"style": {
+				"navigationBarTitleText": "问题详情"
 			}
 		}
+		
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "毕设",
+		"navigationBarBackgroundColor": "#4CAF50",
+		"backgroundColor": "#4CAF50"
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#4CAF50",
+		"borderStyle": "black",
+		"backgroundColor":"#fff",
+		"position":"bottom",
+		"list": [
+			{
+				"selectedIconPath": "static/publish2.png",
+				"iconPath": "static/publish.png",
+				"pagePath": "pages/publish/index",
+				"text": "发布"
+			},
+			{
+				"selectedIconPath": "static/home2.png",
+				"iconPath": "static/home.png",
+				"pagePath": "pages/main/index",
+				"text": "首页"
+			},
+			{
+				"selectedIconPath": "static/mine2.png",
+				"iconPath": "static/mine.png",
+				"pagePath": "pages/mine/index",
+				"text": "我的"
+			}
+		]
 	}
 }
